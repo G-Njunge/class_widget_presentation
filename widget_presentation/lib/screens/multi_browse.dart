@@ -3,6 +3,7 @@ import "../images.dart";
 
 
 
+// Page 2: pictures slide up and down: one big, one medium and one small.
 class MultiBrowse extends StatelessWidget {
   const new({super.key});
 
@@ -21,6 +22,7 @@ class MultiBrowse extends StatelessWidget {
           ),
       ),
       floatingActionButton: FloatingActionButton(
+        // Tap the button to go to the next page.
         onPressed: () {
           Navigator.pushReplacementNamed(context, '/third_page');
         },

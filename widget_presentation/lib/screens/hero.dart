@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "../images.dart";
 
 
+// Page 3: pictures slide up and down: one big and one smaller.
 class HeroScreen extends StatelessWidget {
   const new({super.key});
 
@@ -18,6 +19,7 @@ class HeroScreen extends StatelessWidget {
         children: buildCarouselItems(),
         ),
       floatingActionButton: FloatingActionButton(
+        // Tap the button to go to the next page.
         onPressed: () {
           Navigator.pushReplacementNamed(context, '/fourth_page');
         },

@@ -4,6 +4,7 @@ import "screens/hero.dart";
 import "screens/multi_browse.dart";
 import "screens/uncontained.dart";
 
+// This is where the app starts.
 void main(){
   runApp(const MyApp());
 }
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, 
       initialRoute: '/',
+      // A list of the app's pages and the name used to reach each one.
       routes: {
         // home screen
         '/':(context) => Uncontained(),
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
        
       },
 
-    );//Material App
+    );
   }
 }
 

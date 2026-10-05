@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// The list of pictures shown in the sliding galleries.
 const List<String> carouselImages = [
   'images/pic1.jpg',
   'images/pic2.jpg',
@@ -15,6 +16,7 @@ const List<String> carouselImages = [
   
 ];
 
+// Turns each picture name above into a picture the app can show.
 List<Widget> buildCarouselItems() {
   return carouselImages.map((path) {
     return Image.asset(path, fit: BoxFit.cover);

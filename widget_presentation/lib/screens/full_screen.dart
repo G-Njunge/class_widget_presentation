@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import "../images.dart";
 
 
+// Page 4: one picture fills the whole screen at a time.
 class FullScreen extends StatelessWidget {
   const new({super.key});
 
@@ -21,6 +22,7 @@ class FullScreen extends StatelessWidget {
           ),
       ),
       floatingActionButton: FloatingActionButton(
+        // Tap the button to go back to the first page.
         onPressed: () {
           Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false, );
         },

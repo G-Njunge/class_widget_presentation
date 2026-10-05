@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "../images.dart";
 
+// Page 1: pictures slide sideways in a row, each the same size.
 class Uncontained extends StatelessWidget {
   const new({super.key});
 
@@ -19,6 +20,7 @@ class Uncontained extends StatelessWidget {
           ),
       ),
       floatingActionButton: FloatingActionButton(
+        // Tap the button to go to the next page.
         onPressed: () {
           Navigator.pushReplacementNamed(context, '/second_page');
         },
